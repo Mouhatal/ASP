@@ -1,0 +1,14 @@
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\bin\WcfGL.dll.config
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\bin\WcfGL.dll
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\bin\WcfGL.pdb
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\bin\EntityFramework.dll
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\bin\EntityFramework.SqlServer.dll
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\bin\EntityFramework.xml
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\bin\EntityFramework.SqlServer.xml
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\obj\Debug\WcfGL.csproj.CoreCompileInputs.cache
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\obj\Debug\WcfGL.csproj.CopyComplete
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\obj\Debug\WcfGL.dll
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\obj\Debug\WcfGL.pdb
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\obj\Debug\WcfGL.csprojAssemblyReference.cache
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\bin\fr\EntityFramework.resources.dll
+C:\Users\dell\Documents\ASP.net\WebGL\WcfGL\bin\fr\EntityFramework.SqlServer.resources.dll

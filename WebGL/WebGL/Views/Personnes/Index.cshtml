@@ -1,0 +1,101 @@
+﻿@model PagedList.IPagedList<WcfGL.Models.Personne>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<br />
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="widget">
+
+
+            <div class="widget-body">
+
+                @using (Html.BeginForm("Index", "Personnes", FormMethod.Get))
+                {
+                    <div class="row">
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <b> Téléphone</b>
+                                @Html.TextBox("TelPersonne", ViewBag.TelPersonne as string, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <b> Date de Naissance</b>
+                                @Html.TextBox("DateNaissancePersonne", ViewBag.DateNaissancePersonne as string, new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                    </div>
+                    <div><input type="submit" value="Rechercher" class="btn btn-primary" /></div>
+
+                }
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().NomPrenomPersonne)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().AdressePersonne)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().TelPersonne)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().EmailPersonne)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().DateNaissancePersonne)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomPrenomPersonne)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdressePersonne)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelPersonne)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailPersonne)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateNaissancePersonne)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.IdPersonne }) |
+                @Html.ActionLink("Details", "Details", new { id = item.IdPersonne }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.IdPersonne })
+            </td>
+        </tr>
+    }
+
+</table>
+<br />
+@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, TelPersonne = @ViewBag.TelPersonne, DateNaissancePersonne = @ViewBag.DateNaissancePersonne, }))

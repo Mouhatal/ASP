@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bdWebGl0ModelStoreContainer" CdmEntityContainer="bdWebGl0Entities">
+    <EntitySetMapping Name="Personnes">
+      <EntityTypeMapping TypeName="bdWebGl0Model.Personnes">
+        <MappingFragment StoreEntitySet="Personnes">
+          <ScalarProperty Name="IdPersonne" ColumnName="IdPersonne" />
+          <ScalarProperty Name="NomPrenomPersonne" ColumnName="NomPrenomPersonne" />
+          <ScalarProperty Name="AdressePersonne" ColumnName="AdressePersonne" />
+          <ScalarProperty Name="TelPersonne" ColumnName="TelPersonne" />
+          <ScalarProperty Name="EmailPersonne" ColumnName="EmailPersonne" />
+          <ScalarProperty Name="DateNaissancePersonne" ColumnName="DateNaissancePersonne" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
