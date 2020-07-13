@@ -7,8 +7,6 @@
 
 # AUTEUR
 * Mouhmadou TALL
-* Amadou MBENGUE
-* Laetitia Elvire AZODJILANDE
 
 ## PHP CRUD API
 * `GET - http://localhost/php-rest-api/api/read.php` Récuperer la liste des personne
